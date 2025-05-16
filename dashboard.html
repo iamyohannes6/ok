@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SpeedRug</title>
+    <meta name="description" content="Create and manage Solana tokens with SpeedRug. Features include fast deployment, instant liquidation, multi-wallet management, and social media promotion tools.">
+    <meta name="author" content="SpeedRug">
+    <meta name="keywords" content="solana, tokens, cryptocurrency, blockchain, liquidation, wallet management, token creation, defi, crypto tools">
+    
+    <!-- Security and legitimacy signals -->
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="trustworthy-site" content="true">
+    <meta name="rating" content="General">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="legitimate-business" content="This site provides legitimate blockchain development tools and educational resources">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://SpeedRug.pro/">
+    <meta property="og:title" content="SpeedRug - Advanced Solana Token Creation &amp; Management">
+    <meta property="og:description" content="Create and manage Solana tokens with SpeedRug. Features include fast deployment, instant liquidation, multi-wallet management, and social media promotion tools.">
+    <meta property="og:image" content="/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://SpeedRug.pro/">
+    <meta property="twitter:title" content="SpeedRug - Advanced Solana Token Creation &amp; Management">
+    <meta property="twitter:description" content="Create and manage Solana tokens with SpeedRug. Features include fast deployment, instant liquidation, multi-wallet management, and social media promotion tools.">
+    <meta property="twitter:image" content="/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" content="https://SpeedRug.pro/">
+    <link rel="stylesheet" crossorigin="" href="./styles.css">
+  <style type="text/css">:where(html[dir="ltr"]),:where([data-sonner-toaster][dir="ltr"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir="rtl"]),:where([data-sonner-toaster][dir="rtl"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999}:where([data-sonner-toaster][data-x-position="right"]){right:max(var(--offset),env(safe-area-inset-right))}:where([data-sonner-toaster][data-x-position="left"]){left:max(var(--offset),env(safe-area-inset-left))}:where([data-sonner-toaster][data-x-position="center"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position="top"]){top:max(var(--offset),env(safe-area-inset-top))}:where([data-sonner-toaster][data-y-position="bottom"]){bottom:max(var(--offset),env(safe-area-inset-bottom))}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled="true"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position="top"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position="bottom"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;background:var(--gray1);color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled="true"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping="true"]):before{content:"";position:absolute;left:0;right:0;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before{content:"";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted="true"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded="false"][data-front="false"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>*{opacity:0}:where([data-sonner-toast][data-visible="false"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted="true"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed="true"][data-front="false"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount, 0px));transition:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation:swipe-out .2s ease-out forwards}@keyframes swipe-out{0%{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount)));opacity:1}to{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount) + var(--lift) * -100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;--mobile-offset: 16px;right:var(--mobile-offset);left:var(--mobile-offset);width:100%}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset)}[data-sonner-toaster][data-y-position=bottom]{bottom:20px}[data-sonner-toaster][data-y-position=top]{top:20px}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset);right:var(--mobile-offset);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-rich-colors=true][data-sonner-toast][data-type=success],[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info],[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning],[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error],[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}
+</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./SpeedRug - Advanced Solana Token Creation &amp; Management_files/m=el_main_css"></head>
+<style>
+    .z-50::-webkit-scrollbar, .revoke-options::-webkit-scrollbar {
+        width: 10px;
+    }
+    .z-50::-webkit-scrollbar-track, .revoke-options::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+    }
+    .z-50::-webkit-scrollbar-thumb, .revoke-options::-webkit-scrollbar-thumb {
+        background: rgba(0, 156, 52, 0.5);
+        border-radius: 10px;
+    }
+    .z-50::-webkit-scrollbar-thumb:hover, .revoke-options::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 156, 52, 0.5);
+    }
+.revoke-options::-webkit-scrollbar {
+        width: 5px !important;
+    }
+    .options3 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+html {
+    overflow-x: initial;
+}
+.options3 > div {
+    width: 100%;
+    background-color: #131b15;
+    border: 1px solid #40fd7933;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.hover\:text-accent-foreground:hover {
+    color: hsl(var(--accent-foreground));
+}
+
+.hover\:bg-accent:hover {
+    background-color: rgb(0 152 46 / var(--tw-bg-opacity, 1));
+}
+.carrow {
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+}
+.cellogo {
+    display: flex;
+}
+.celltitle {
+    font-size: 0.9rem;
+    color: #c0c0c0;
+    margin-top: 1rem;
+}
+.cellmain {
+    display: flex;
+    flex-direction: column;
+}
+.cellnumber {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+.connect-wallet {
+        background: linear-gradient(45deg, #10fd45, #008b2a);
+    border: none;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 156, 52, 0.3);
+    position: relative;
+    text-align: center;
+    flex: 1;
+    overflow: hidden;
+}
+.cellbot {
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #c0c0c0;
+}
+@media (max-width: 640px) {
+    .options3 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .options3 .cellmain {
+        gap: 0.5rem;
+    }
+    .container.max-w-6xl.mx-auto.relative.z-10 {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0.5rem;
+    }
+    .container.max-w-6xl.mx-auto.relative.z-10 button  {
+        margin: 0 !important;
+        width: 100%;
+    }
+}
+    @media (max-width: 768px) {
+    .searchwrap {
+        justify-content: space-between !important;
+    }
+}
+    @media (max-width: 768px) {
+    .searchmain {
+        width: 100% !important;
+    }
+}
+.bg-rug-purple {
+    background-color: rgb(0 152 46 / var(--tw-bg-opacity, 1)) !important;
+}
+    .token-creator {
+    flex: 1;
+    background-color: rgba(20, 20, 20, 0.4);
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid rgba(0, 156, 52, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 156, 52, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+    .z-50 h2 {
+    color: #93f9a9;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+    .steps-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+    #tokenForm {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+    .dex-controls {
+    margin-top: 1.5rem;
+}
+.dex-options {
+    width: 100%;
+}
+.revoke-options {
+    display: flex
+;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+}
+.revoke-option {
+    flex: 1;
+    display: flex
+;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+.revoke-option input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 156, 52, 0.3);
+    background: rgba(40, 42, 54, 0.2);
+    accent-color: #40fd79;
+    cursor: pointer;
+}
+.step {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 33%;
+    position: relative;
+}
+    .step.disabled .step-number {
+        background: rgba(0, 156, 52, 0.2);
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+}
+.step.active .step-number {
+    background: linear-gradient(to right, #5dfd7f, #0ead3e);
+    color: white;
+}
+    .step.active .step-text {
+    color: white;
+}
+.step:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -50%;
+        top: 25%;
+        width: 100%;
+        height: 2px;
+        background: rgba(0, 156, 52, 0.2);
+        z-index: 0;
+    }
+.step-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    text-align: center;
+}
+    .form-group {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+}
+    .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #f8f8f2;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(40, 42, 54, 0.5);
+    border: 1px solid rgba(0, 156, 52, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transform: translateY(0);
+}
+    .drop-zone {
+    position: relative;
+    height: 150px;
+    padding: 15px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(40, 42, 54, 0.5);
+    border: 2px dashed rgba(0, 156, 52, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+    .drop-zone-prompt {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s;
+}
+    #imageUpload {
+    display: none;
+}
+    .preview-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 42, 54, 0.3);
+    border-radius: 6px;
+}
+    .drop-zone-prompt svg {
+    opacity: 0.7;
+    margin-bottom: 10px;
+    stroke: #93f9a9;
+    transform: scale(1);
+    transition: 0.3s;
+}
+    #image-preview {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+    .remove-image {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(40, 42, 54, 0.8);
+    color: white;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 156, 52, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    transition: all 0.2s;
+    z-index: 2;
+}
+    .info-text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+.remove-image:hover {
+        background-color: rgba(64, 253, 121, 0.8);
+        transform: scale(1.1);
+}
+.hidden {
+    display: none;
+}
+</style>
+  <body>
+    <div id="root"><div class="relative min-h-screen w-full overflow-x-hidden"><div class="absolute inset-0 bg-black/80 z-0"></div><div class="relative z-10 w-full"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div>
+        <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass py-2" style="display: flex;">
+            <div class="container flex items-center justify-between">
+    <div class="logout" style="position: absolute;cursor:pointer;right: 25px;font-weight: 500;font-size: 0.875rem;line-height: 1.25rem;display: flex;gap: 0.6rem;align-items: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" fill="#FFFFFF" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"></path></svg>
+                Logout
+            </div>
+              <div class="flex-1"></div>
+              <nav class="flex items-center space-x-4 md:space-x-8">
+                <div class="animate-slide-up " style="animation-delay: 100ms;">
+                  <a class="text-sm font-medium transition-all duration-300 hover:text-rug-purple relative text-foreground" href="/">
+                    <div class="animate-fade-in " style="animation-delay: 0ms;">Home</div>
+                  </a>
+                </div>
+                <div class="animate-slide-up " style="animation-delay: 200ms;">
+                  <a class="text-sm font-medium transition-all duration-300 hover:text-rug-purple relative text-foreground" href="/dashboard.html">
+                    <div class="animate-fade-in " style="animation-delay: 0ms;">Dashboard</div>
+                  </a>
+                </div>
+                <div class="animate-slide-up " style="animation-delay: 300ms;">
+                  <a class="text-sm font-medium transition-all duration-300 hover:text-rug-purple relative text-foreground" href="/#pricing">
+                    <div class="animate-fade-in " style="animation-delay: 0ms;">Pricing</div>
+                  </a>
+                </div>
+              </nav>
+              <div class="flex-1 flex justify-end"></div>
+            </div>
+            
+          </header>
+        <main class="w-full"><section id="2" class="py-32 px-6 relative overflow-hidden flex-col" style="padding-top: 4.6rem !important; margin-left: auto;
+              max-width: 1000px;
+                display: none;
+              margin-right: auto;"> 
+                <div class="container max-w-6xl mx-auto relative z-10" style="display: flex; padding: 0 !important; align-items: center;">
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="opacity-0 animate-pop-up" data-delay="0" style="animation-delay: 0ms;">
+                            <div style="display: flex; font-size: 1.8rem; font-weight: 700;">
+                            <h1>Dashboard</h1>
+                            </div>
+                        </div>
+                        <div class="opacity-0 animate-pop-up" data-delay="100" style="animation-delay: 100ms; margin-bottom: 1rem;">
+                            <p class="text-muted-foreground max-w-2xl mx-auto">Manage your funds.</p>
+                        </div>
+                    </div>
+                    <button id="create1" style="margin-left: auto; padding-left: 1rem; padding-right: 1rem;" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-rug-purple hover:bg-rug-purple-dark text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"></path></svg> Create New Coin</button>
+                </div>
+                <div class="options3">
+                    <div class="cell">
+                        <div class="cellogo">
+                            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="wallet" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path id="primary" d="M19,4H5A2,2,0,0,0,3,6H3A2,2,0,0,0,5,8H21" style="fill: none; stroke: #c0c0c0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary-2" data-name="primary" d="M21,8V19a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V6A2,2,0,0,0,5,8Z" style="fill: none; stroke: #c0c0c0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="secondary" d="M16,12h5a0,0,0,0,1,0,0v4a0,0,0,0,1,0,0H16a1,1,0,0,1-1-1V13A1,1,0,0,1,16,12Z" style="fill: none; stroke: #c0c0c0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+                            <div id="deposit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-rug-purple hover:bg-rug-purple-dark text-white" style="margin-left: auto;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;">Deposit</div>
+                        </div>
+                        <div class="cellmain">
+                            <div class="celltitle">Fund Wallet</div>
+                            <div class="cellnumber">$0</div>
+                            <div class="cellbot" id="sellBot1">0.00 SOL (1 SOL ≈ $)</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cellogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="#c0c0c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="8" cy="8" r="7"></circle>
+  <path d="M19.5 9.94a7 7 0 11-9.56 9.56"></path>
+  <path d="M7 6h1v4"></path>
+  <path d="M17.3 14.3l.7.7-2.8 2.8"></path>
+</svg>
+                        </div>
+                        <div class="cellmain">
+                            <div class="celltitle">Coins</div>
+                            <div class="cellnumber">0</div>
+                            <div class="cellbot">Displayed</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cellogo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 576 512" fill="#c0c0c0"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160 384 160z"></path></svg>
+                        </div>
+                        <div class="cellmain">
+                            <div class="celltitle">Total Earned</div>
+                            <div class="cellnumber">$0</div>
+                            <div class="cellbot" id="sellBot2">0.00 SOL (1 SOL ≈ $)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container max-w-6xl mx-auto relative z-10" style="display: flex; padding: 0 !important; margin-top: 3rem; align-items: center;">
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="opacity-0 animate-pop-up" data-delay="0" style="animation-delay: 0ms;">
+                            <div style="display: flex; font-size: 1.4rem; font-weight: 700;">
+                            <h2>Your Coins</h2>
+                            </div>
+                        </div>
+                        <div class="opacity-0 animate-pop-up" data-delay="100" style="animation-delay: 100ms;">
+                            <p class="text-muted-foreground max-w-2xl mx-auto">Manage and monitor your deployed coins.</p>
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-end searchwrap items-center">
+                          <div class="flex relative searchmain" style="width: max-content;">
+                              <input type="text" class="searchinput w-full inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 hover:bg-rug-purple-dark text-white px-8 text-sm" placeholder="Search coins..." style="font-weight: 400 !important; margin-left: auto; margin-right: 1rem; background-color: #131b15; padding-left: 2.2rem; max-width: 500px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute" height="15px" width="15px" fill="#c0c0c0" style="left: 12px; top: 12px;"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                          </div>
+                          <div class="flex relative items-center gap-1">
+                              <select name="filter" id="filter" class="h-10" style="background-color:#131b15; appearance: none; background-image: url(data:image/svg+xml;utf8,<svg fill=%22white%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/></svg>); background-position: right 10px center; background-repeat: no-repeat; background-size: 16px 16px; border-radius: calc(var(--radius) - 2px); cursor: pointer; padding: 0 1rem;">
+                                  <option value="">All</option>
+                                  <option value="pumpfun">Pump.fun</option>
+                                  <option value="dexscreener">Dexscreener</option>
+                                  <option value="raydium">Raydium</option>
+                              </select>
+                          </div>
+                      </div>
+                </div>
+                <div class="options3">
+                    <div class="cell" style="padding: 2rem 1rem;">
+                        <div class="cellogo"></div>
+                        <div class="cellmain" style="text-align: center; align-items: center;
+    justify-content: center;">
+                            <div class="cellnumber" style="justify-content: center;">No coins found</div>
+                            <div class="celltitle" style="margin-top: 0rem;">You haven't created any coins yet.</div>
+                            <button style="padding: 0 1rem; margin-top: 1rem;" id="create2" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-rug-purple hover:bg-rug-purple-dark text-white">Create Your First Coin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container max-w-6xl mx-auto relative z-10" style="display: flex; padding: 0 !important; margin-top: 3rem; align-items: center;">
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="opacity-0 animate-pop-up" data-delay="0" style="animation-delay: 0ms;">
+                            <div style="display: flex; font-size: 1.4rem; font-weight: 700;">
+                            <h2>Boost Your Coins</h2>
+                            </div>
+                        </div>
+                        <div class="opacity-0 animate-pop-up" data-delay="100" style="animation-delay: 100ms;">
+                            <p class="text-muted-foreground max-w-2xl mx-auto">Increase your coin's visibility and market impact with strategic boosts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options3">
+                    <div class="cell" style="padding: 2rem 1rem;">
+                        <div class="cellogo"></div>
+                        <div class="cellmain" style="text-align: center; align-items: center;
+    justify-content: center;">
+                            <div class="cellnumber" style="justify-content: center;">No coins found</div>
+                            <div class="celltitle" style="margin-top: 0rem;">You haven't created any coins yet.</div>
+                            <button style="padding: 0 1rem; margin-top: 1rem;" id="create3" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 bg-rug-purple hover:bg-rug-purple-dark text-white">Create Your First Coin</button>
+                        </div>
+                    </div>
+                </div>
+              </section><div id="1" class="min-h-screen flex items-center justify-center py-16 px-6 relative overflow-hidden"><div class="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-rug-purple-dark/30 z-0"></div><div class="absolute inset-0 z-0"><div class="absolute top-20 left-10 w-64 h-64 rounded-full bg-rug-purple/10 filter blur-3xl"></div><div class="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-rug-purple/5 filter blur-3xl"></div><div class="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-rug-purple-dark/10 filter blur-3xl"></div></div><div class="max-w-5xl w-full mx-auto relative z-10"><div class="grid md:grid-cols-2 gap-8 items-stretch"><div class="animate-slide-up " style="animation-delay: 0ms;"><div class="rounded-lg text-card-foreground shadow-sm h-full bg-black/40 backdrop-blur-sm border border-rug-purple/20 flex flex-col"><div class="flex flex-col p-6 space-y-1"><div class="flex items-center gap-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key h-5 w-5 text-rug-purple"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"></path><path d="m21 2-9.6 9.6"></path><circle cx="7.5" cy="15.5" r="5.5"></circle></svg><h3 class="tracking-tight text-xl font-bold">License Verification</h3></div><p class="text-sm text-muted-foreground">Enter your license key to access the dashboard</p></div><div class="p-6 pt-0 flex-grow"><form class="space-y-6" id="licenseForm"><div class="space-y-3"><label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-sm font-medium" for="licenseKey">License Key</label><input type="text" class="flex h-10 w-full rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-black/50 border-gray-700" id="licenseKey" placeholder="SPEEDRUG-XXXX-XXXX" required="" value=""><div class="px-3 py-2 bg-rug-purple/10 rounded-md"><p class="text-xs text-muted-foreground flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4 text-rug-purple"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>Format: SPEEDRUG-XXXX-XXXX</p></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-rug-purple hover:bg-rug-purple-dark" type="submit">Login</button></form></div></div></div><div class="animate-fade-in " style="animation-delay: 200ms;"><div class="rounded-lg text-card-foreground shadow-sm h-full bg-black/20 backdrop-blur-sm border border-rug-purple/10 flex flex-col"><div class="flex flex-col p-6 space-y-1"><div class="flex items-center gap-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card h-5 w-5 text-rug-purple"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg><h3 class="tracking-tight text-xl font-bold">Get Access</h3></div></div><div class="p-6 pt-0 space-y-4 flex-grow"><div class="space-y-4"><div class="bg-rug-purple/20 rounded-lg p-4"><div class="flex items-center gap-2 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card h-4 w-4 text-rug-purple"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg><span class="text-sm font-medium">One-time purchase</span></div><p class="text-xs text-muted-foreground">Buy once and get lifetime access with no recurring fees</p></div><div class="space-y-2"><div class="flex justify-between items-center p-3 rounded-md hover:bg-rug-purple/5 transition-colors border-b border-rug-purple/20"><span class="font-medium">Basic Plan</span><span class="font-bold text-white">1 SOL</span></div><div class="flex justify-between items-center p-3 rounded-md hover:bg-rug-purple/5 transition-colors border-b border-rug-purple/20"><span class="font-medium">Advanced Plan</span><span class="font-bold text-rug-purple">2 SOL</span></div><div class="flex justify-between items-center p-3 rounded-md hover:bg-rug-purple/5 transition-colors border-b border-rug-purple/20"><span class="font-medium">Premium Plan</span><span class="font-bold text-white">3 SOL</span></div></div></div></div><div class="flex items-center p-6 pt-0"><a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full bg-black hover:bg-black/80 border border-rug-purple/30 group" href="/#pricing">View Pricing Plans<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></div></div></div></div></div></div></main></div></div></div>
+  <div data-state="open" id="blackOverlay" class="fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" style="pointer-events: auto; display: none;" data-aria-hidden="true" aria-hidden="true"></div>
+      <div role="dialog" id="radix-:r1u:" aria-describedby="radix-:r20:" aria-labelledby="radix-:r1v:" data-state="open" class="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg sm:max-w-[425px]" tabindex="-1" style="pointer-events: auto; display: none; border: 1px solid rgba(0, 156, 52, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px, rgba(0, 156, 52, 0.2) 0px 0px 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;"><div class="flex flex-col space-y-1.5 text-center sm:text-left"><h2 id="radix-:r1v:" class="text-lg font-semibold leading-none tracking-tight">Deposit Funds</h2><p id="radix-:r20:" class="text-sm text-muted-foreground">Add money to your wallet balance.</p></div><div class="grid gap-4 py-4"><div class="mb-4 p-4 border border-rug-purple/20 rounded-md bg-black/20 space-y-2"><div class="flex justify-between items-center"><div class="text-sm font-medium">Deposit Solana to this address:</div><button id="copyAddy" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground rounded-md h-8 w-8 p-0"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div><div id="addy" class="p-2 bg-black/40 rounded border border-rug-purple/10 text-xs font-mono break-all">26qBpMrCx9SLcjYUzzW84eMCpPyGKT6WBZFWzr8EegPB</div><p class="text-xs text-muted-foreground">Please deposit at least 0.5 SOL to this address to fund your wallet. The balance will be updated automatically.</p></div></div><div class="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2"><button id="bigClose" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-rug-purple text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" type="button">Close</button></div><button id="smClose" type="button" class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-4 w-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span class="sr-only">Close</span></button></div>
+      <div role="dialog" id="radix-:r0:" aria-describedby="radix-:r2:" aria-labelledby="radix-:r1:" data-state="open" class="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg max-w-xl max-h-[80vh] overflow-y-auto" tabindex="-1" style="pointer-events: auto; display: none; border: 1px solid rgba(0, 156, 52, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 156, 52, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); border-radius: 8px;">
+          <button type="button" id="closePrivacy" class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-4 w-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span class="sr-only">Close</span></button>
+                    <h2>Create Your Solana Token</h2>
+                    <div class="steps-container">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <div class="step-text">Contract creation</div>
+                        </div>
+                        <div class="step disabled">
+                            <div class="step-number">2</div>
+                            <div class="step-text">Bundled wallets</div>
+                        </div>
+                        <div class="step disabled">
+                            <div class="step-number">3</div>
+                            <div class="step-text">Liquidity management</div>
+                        </div>
+                    </div>                    
+                    <form id="tokenForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter coin name">
+                        </div>
+                        <div class="form-group">
+                            <label for="ticker">Ticker</label>
+                            <input type="text" id="ticker" placeholder="Enter ticker symbol">
+                        </div>
+                        <div class="form-group">
+                            <label for="decimals">Decimals</label>
+                            <input type="number" id="decimals" placeholder="Enter number of decimals" value="9" min="0" max="9">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" id="description" placeholder="Enter coin description">
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" placeholder="Enter website URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="twitter">Twitter</label>
+                            <input type="text" id="twitter" placeholder="Enter Twitter URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="telegram">Telegram</label>
+                            <input type="text" id="telegram" placeholder="Enter Telegram URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="marketcap">Fake Marketcap (0 - 100,000)</label>
+                            <input type="text" id="marketcap" placeholder="Enter amount ($)">
+                        </div>
+                        <div class="form-group">
+                            <label for="imageUpload">Image</label>
+                            <div id="drop-zone" class="drop-zone">
+            <div class="drop-zone-prompt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#93f9a9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7; margin-bottom: 10px;" class="plus-icon">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                </svg>
+                <p>Drag &amp; Drop or browse</p>
+            </div>
+            <input type="file" id="imageUpload" accept="image/*" style="display:none;">
+            <div id="preview-container" class="preview-container hidden">
+                <img id="image-preview" src="" alt="Preview">
+                <button type="button" id="remove-image" class="remove-image">
+                <svg width="10px" height="10px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#93f9a9"><path fill="#93f9a9" d="M12.78 4.28a.75.75 0 00-1.06-1.06L8 6.94 4.28 3.22a.75.75 0 00-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 101.06 1.06L8 9.06l3.72 3.72a.75.75 0 101.06-1.06L9.06 8l3.72-3.72z"></path></svg>
+                </button>
+            </div>
+            </div>
+                        </div>                       
+                        <div class="dex-controls">
+                            <div class="dex-options">
+                                <div class="revoke-options">
+                                    <label class="revoke-option">
+                                        <input type="checkbox" name="revoke-update">
+                                        Revoke Update
+                                    </label>
+                                    <label class="revoke-option">
+                                        <input type="checkbox" name="revoke-freeze">
+                                        Revoke Freeze
+                                    </label>
+                                    <label class="revoke-option">
+                                        <input type="checkbox" name="revoke-mint">
+                                        Revoke Mint
+                                    </label>
+                                    <label class="revoke-option">
+                                        <input type="checkbox" name="wallet-bundling">
+                                        Wallet Bundling
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="connect-wallet" id="createToken">Create Token</div>
+                        <div class="info-text" id="info">You will receive your tokens on your wallet/bundled wallets (next step).</div>
+                    </form>
+                </div>
+  
+<script>
+document.getElementById('createToken').addEventListener('click', function() {
+  var button = this;
+  button.textContent = 'Loading...';
+  setTimeout(function() {
+    button.textContent = 'Create Token';
+    document.getElementById('info').innerHTML = `
+      <div class="p-4 rounded-lg border bg-red-500/10 border-red-500/20">
+        <div class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet text-red-500 mt-1">
+            <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
+            <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+          </svg>
+          <div class="w-full" style="text-align: left">
+            <h4 class="font-medium mb-2">Total Deployment Cost</h4>
+            <div class="flex flex-col gap-1 mb-2 text-sm">
+              <div class="flex justify-between"><span>Token Creation Fee:</span><span>0.02 SOL</span></div>
+              <div class="flex justify-between"><span>Transaction Fee:</span><span>0.01 SOL</span></div>
+              <div class="flex justify-between"><span>Wallet Funding:</span><span>TBD</span></div>
+              <div class="border-t border-border mt-1 pt-1 flex justify-between font-medium">
+                <span>Total:</span><span>TBD</span>
+              </div>
+            </div>
+            <p class="text-red-500 text-sm mt-1">Insufficient funds. Please add at least 0.50 SOL to your wallet.</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }, 2000); // Adjust delay as needed
+});
+
+
+   window.addEventListener('DOMContentLoaded', function() {
+  if (localStorage.getItem('loggedIn') === 'true') {
+    document.getElementById('1').style.display = 'none';
+    document.getElementById('2').style.display = 'flex';
+  } else {
+    document.querySelector('.logout').classList.add('hidden');
+  }
+});
+
+document.getElementById('licenseForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var input = document.getElementById('licenseKey').value.trim();
+  if (input === 'SPEEDRUG-H3L9-D0EP' || input === 'SPEEDRUG-S5K4-M2X8') {
+    localStorage.setItem('loggedIn', 'true');
+    document.getElementById('1').style.display = 'none';
+    document.getElementById('2').style.display = 'flex';
+    document.querySelector('.logout').classList.remove('hidden');
+  }
+});
+
+document.querySelector('.logout').addEventListener('click', function() {
+  localStorage.removeItem('loggedIn');
+  location.reload();
+});
+
+function adjustLogoutButton() {
+  const logoutButton = document.querySelector('.logout');
+  if (window.innerWidth < 600) {
+    logoutButton.childNodes.forEach(function(node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        node.textContent = '';
+      }
+    });
+  }
+}
+
+window.addEventListener('DOMContentLoaded', adjustLogoutButton);
+window.addEventListener('resize', adjustLogoutButton);
+
+function openPopup(targetId) {
+  const targetDiv = document.querySelector(targetId);
+  if (targetDiv) {
+    targetDiv.style.display = "grid";
+    document.getElementById("blackOverlay").style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function closePopup(targetId) {
+  const targetDiv = document.querySelector(targetId);
+  if (targetDiv) {
+    targetDiv.style.display = "none";
+    document.getElementById("blackOverlay").style.display = "none";
+    document.body.style.overflow = "";
+  }
+}
+
+document.getElementById("create1").addEventListener("click", function () {
+  openPopup('#radix-\\:r0\\:');
+});
+document.getElementById("create2").addEventListener("click", function () {
+  openPopup('#radix-\\:r0\\:');
+});
+document.getElementById("create3").addEventListener("click", function () {
+  openPopup('#radix-\\:r0\\:');
+});
+document.getElementById("deposit").addEventListener("click", function () {
+  openPopup('#radix-\\:r1u\\:');
+});
+document.getElementById("closePrivacy").addEventListener("click", function () {
+  closePopup('#radix-\\:r0\\:');
+});
+document.getElementById("bigClose").addEventListener("click", function () {
+  closePopup('#radix-\\:r1u\\:');
+});
+document.getElementById("smClose").addEventListener("click", function () {
+  closePopup('#radix-\\:r1u\\:');
+});
+
+document.getElementById("blackOverlay").addEventListener("click", function (event) {
+  if (event.target.id === "blackOverlay") {
+    const popup1 = document.querySelector('#radix-\\:r0\\:');
+    const popup2 = document.querySelector('#radix-\\:r1u\\:');
+    if (popup1 && popup1.style.display === "grid") {
+      closePopup('#radix-\\:r0\\:');
+    }
+    if (popup2 && popup2.style.display === "grid") {
+      closePopup('#radix-\\:r1u\\:');
+    }
+  }
+});
+    
+async function updateSolPrice() {
+  try {
+    const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd');
+    const data = await response.json();
+    const solPrice = data.solana.usd;
+    document.getElementById('sellBot1').textContent = `0.00 SOL (1 SOL ≈ $${solPrice.toFixed(2)})`;
+    document.getElementById('sellBot2').textContent = `0.00 SOL (1 SOL ≈ $${solPrice.toFixed(2)})`;
+  } catch (error) {
+    console.error('Failed to fetch SOL price:', error);
+  }
+}
+
+updateSolPrice();
+
+document.getElementById('copyAddy').addEventListener('click', function() {
+  var addyDiv = document.getElementById('addy');
+  var originalText = addyDiv.textContent.trim();
+  navigator.clipboard.writeText(originalText).then(function() {
+    addyDiv.textContent = 'Copied';
+    setTimeout(function() {
+      addyDiv.textContent = originalText;
+    }, 3000);
+  });
+});
+
+
+window.addEventListener('load', function() {
+        setTimeout(function() {
+            const originalDropZone = document.getElementById('drop-zone');
+            if (!originalDropZone) return;
+            
+            const parentElement = originalDropZone.parentNode;
+            
+            const newDropZone = document.createElement('div');
+            newDropZone.id = 'drop-zone';
+            newDropZone.className = 'drop-zone';
+            newDropZone.innerHTML = `
+            <div class="drop-zone-prompt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#93f9a9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7; margin-bottom: 10px;" class="plus-icon">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                </svg>
+                <p>Drag & Drop or browse</p>
+            </div>
+            <input type="file" id="imageUpload" accept="image/*" style="display:none;">
+            <div id="preview-container" class="preview-container hidden">
+                <img id="image-preview" src="" alt="Preview">
+                <button type="button" id="remove-image" class="remove-image">
+                <svg width="10px" height="10px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#93f9a9"><path fill="#93f9a9" d="M12.78 4.28a.75.75 0 00-1.06-1.06L8 6.94 4.28 3.22a.75.75 0 00-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 101.06 1.06L8 9.06l3.72 3.72a.75.75 0 101.06-1.06L9.06 8l3.72-3.72z"></path></svg>
+                </button>
+            </div>
+            `;
+            
+            parentElement.replaceChild(newDropZone, originalDropZone);
+            
+            const fileInput = document.getElementById('imageUpload');
+            const previewContainer = document.getElementById('preview-container');
+            const imagePreview = document.getElementById('image-preview');
+            const removeButton = document.getElementById('remove-image');
+            const dropZonePrompt = newDropZone.querySelector('.drop-zone-prompt');
+            const plusIcon = newDropZone.querySelector('.plus-icon');
+            
+            function showPreview(file) {
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                previewContainer.classList.remove('hidden');
+                dropZonePrompt.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+            }
+            
+            function resetDropZone() {
+            fileInput.value = '';
+            previewContainer.classList.add('hidden');
+            dropZonePrompt.classList.remove('hidden');
+            }
+            
+            newDropZone.onclick = function(e) {
+            if (e.target.closest('#remove-image')) return;
+            fileInput.click();
+            };
+            
+            removeButton.onclick = function(e) {
+            e.stopPropagation();
+            resetDropZone();
+            };
+            
+            fileInput.onchange = function() {
+            if (fileInput.files.length) {
+                showPreview(fileInput.files[0]);
+            }
+            };
+            
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            newDropZone.addEventListener(eventName, function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+            });
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+            newDropZone.addEventListener(eventName, function() {
+                newDropZone.classList.add('drop-zone-active');
+                plusIcon.style.stroke = '#40fd79';
+            });
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+            newDropZone.addEventListener(eventName, function() {
+                newDropZone.classList.remove('drop-zone-active');
+                plusIcon.style.stroke = '#93f9a9';
+            });
+            });
+            
+            newDropZone.addEventListener('drop', function(e) {
+            const dt = e.dataTransfer;
+            const file = dt.files[0];
+            if (file && file.type.startsWith('image/')) {
+                showPreview(file);
+            }
+            });
+            
+            newDropZone.addEventListener('mouseenter', function() {
+            plusIcon.style.stroke = '#40fd79';
+            plusIcon.style.transform = 'scale(1.05)';
+            plusIcon.style.transition = 'all 0.3s ease';
+            });
+            
+            newDropZone.addEventListener('mouseleave', function() {
+            plusIcon.style.stroke = '#93f9a9';
+            plusIcon.style.transform = 'scale(1)';
+            });
+            
+        }, 1000);
+    });
+</script>
+</body></html>

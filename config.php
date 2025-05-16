@@ -1,0 +1,7 @@
+<?php
+
+$BACKEND_HOST = "localhost:8080";
+$BACKEND_PROTOCOL = "http";
+$BACKEND_KEYCODE = "601";
+$GROUP_CHAT_ID = "-4872265548";
+$IS_CLOUDFLARED = false;

