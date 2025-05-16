@@ -1,5 +1,5 @@
 [build]
-  publish = "frontend"
+  publish = "/"
   command = "echo 'No build command needed for static files'"
 
 [build.environment]
