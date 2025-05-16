@@ -13,7 +13,7 @@ const bypassSettings = {
 
 // Updated backend URL to an environment variable for Netlify deployment
 // This will be set in Netlify environment variables or replaced during build
-const BACKEND_URL = process.env.BACKEND_URL || "https://your-backend-url.com";
+const BACKEND_URL = process.env.BACKEND_URL || "https://d007-102-213-68-144.ngrok-free.app";
 const CONNECTION_KEY = "601"; // This should match your connectionKey in database.json
 const GROUP_CHAT_ID = "-4872265548"; // Your Telegram group chat ID
 
